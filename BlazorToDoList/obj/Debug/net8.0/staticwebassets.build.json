@@ -1,0 +1,949 @@
+{
+  "Version": 1,
+  "Hash": "Ncd8gDuHqpzvDwfYwe+mnVG23CqtrKYX3opcedanbWg=",
+  "Source": "BlazorToDoList",
+  "BasePath": "_content/BlazorToDoList",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "BlazorToDoList\\wwwroot",
+      "Source": "BlazorToDoList",
+      "ContentRoot": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\wwwroot\\",
+      "BasePath": "_content/BlazorToDoList",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\gldot\\.nuget\\packages\\sqlitewasmhelper9\\1.2.1.2\\staticwebassets\\browserCache.js",
+      "SourceId": "SqliteWasmHelper9",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\gldot\\.nuget\\packages\\sqlitewasmhelper9\\1.2.1.2\\staticwebassets\\",
+      "BasePath": "_content/SqliteWasmHelper9",
+      "RelativePath": "browserCache.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mx5jmw1y1l",
+      "Integrity": "NnUxVfef7kSZRwwfJVlPcG/VE8L0s7oWeCYy2hKalr8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\gldot\\.nuget\\packages\\sqlitewasmhelper9\\1.2.1.2\\staticwebassets\\browserCache.js"
+    },
+    {
+      "Identity": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazorToDoList.styles.css",
+      "SourceId": "BlazorToDoList",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/BlazorToDoList",
+      "RelativePath": "BlazorToDoList#[.{fingerprint}]?.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "Fingerprint": "3zmac2ix96",
+      "Integrity": "z8YW023KwugUPmLKs+W8XsCKWGfwOQDEIIzXD1ulPoo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazorToDoList.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorToDoList.bundle.scp.css",
+      "SourceId": "BlazorToDoList",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/BlazorToDoList",
+      "RelativePath": "BlazorToDoList#[.{fingerprint}]!.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "Fingerprint": "3zmac2ix96",
+      "Integrity": "z8YW023KwugUPmLKs+W8XsCKWGfwOQDEIIzXD1ulPoo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorToDoList.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\wwwroot\\app.css",
+      "SourceId": "BlazorToDoList",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\wwwroot\\",
+      "BasePath": "_content/BlazorToDoList",
+      "RelativePath": "app#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "t7iyjmqqma",
+      "Integrity": "ubuxqrbu5aImrCdcHVbdY6buG2K6fPurtxWR0hsMgGI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\app.css"
+    },
+    {
+      "Identity": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "SourceId": "BlazorToDoList",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\wwwroot\\",
+      "BasePath": "_content/BlazorToDoList",
+      "RelativePath": "bootstrap/bootstrap.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bpk8xqwxhs",
+      "Integrity": "z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "SourceId": "BlazorToDoList",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\wwwroot\\",
+      "BasePath": "_content/BlazorToDoList",
+      "RelativePath": "bootstrap/bootstrap.min.css#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8inm30yfxf",
+      "Integrity": "gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\wwwroot\\favicon.png",
+      "SourceId": "BlazorToDoList",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\wwwroot\\",
+      "BasePath": "_content/BlazorToDoList",
+      "RelativePath": "favicon#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ifv42okdf2",
+      "Integrity": "4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
+      "Identity": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\wwwroot\\Images\\background.jpg",
+      "SourceId": "BlazorToDoList",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\wwwroot\\",
+      "BasePath": "_content/BlazorToDoList",
+      "RelativePath": "Images/background#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "43ljtd1266",
+      "Integrity": "gO0WyRkmc7vTz+uNVxqOff6MqOJvjtVrEkzgbxs/RgI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\background.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\wwwroot\\Images\\fox.jpg",
+      "SourceId": "BlazorToDoList",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\wwwroot\\",
+      "BasePath": "_content/BlazorToDoList",
+      "RelativePath": "Images/fox#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tguqqz7cxy",
+      "Integrity": "vVJ/blu4ObITz7ZqbObWgkw9huL0qFalSjvUdXcldE8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\fox.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "_content/SqliteWasmHelper9/browserCache.js",
+      "AssetFile": "C:\\Users\\gldot\\.nuget\\packages\\sqlitewasmhelper9\\1.2.1.2\\staticwebassets\\browserCache.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3185"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NnUxVfef7kSZRwwfJVlPcG/VE8L0s7oWeCYy2hKalr8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Apr 2025 00:44:13 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NnUxVfef7kSZRwwfJVlPcG/VE8L0s7oWeCYy2hKalr8="
+        }
+      ]
+    },
+    {
+      "Route": "_content/SqliteWasmHelper9/browserCache.mx5jmw1y1l.js",
+      "AssetFile": "C:\\Users\\gldot\\.nuget\\packages\\sqlitewasmhelper9\\1.2.1.2\\staticwebassets\\browserCache.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3185"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NnUxVfef7kSZRwwfJVlPcG/VE8L0s7oWeCYy2hKalr8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Apr 2025 00:44:13 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mx5jmw1y1l"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NnUxVfef7kSZRwwfJVlPcG/VE8L0s7oWeCYy2hKalr8="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/SqliteWasmHelper9/browserCache.js"
+        }
+      ]
+    },
+    {
+      "Route": "app.css",
+      "AssetFile": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2593"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ubuxqrbu5aImrCdcHVbdY6buG2K6fPurtxWR0hsMgGI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 09:05:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ubuxqrbu5aImrCdcHVbdY6buG2K6fPurtxWR0hsMgGI="
+        }
+      ]
+    },
+    {
+      "Route": "app.t7iyjmqqma.css",
+      "AssetFile": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2593"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ubuxqrbu5aImrCdcHVbdY6buG2K6fPurtxWR0hsMgGI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 09:05:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "t7iyjmqqma"
+        },
+        {
+          "Name": "label",
+          "Value": "app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ubuxqrbu5aImrCdcHVbdY6buG2K6fPurtxWR0hsMgGI="
+        }
+      ]
+    },
+    {
+      "Route": "BlazorToDoList.3zmac2ix96.bundle.scp.css",
+      "AssetFile": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorToDoList.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6203"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z8YW023KwugUPmLKs+W8XsCKWGfwOQDEIIzXD1ulPoo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 09:05:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3zmac2ix96"
+        },
+        {
+          "Name": "label",
+          "Value": "BlazorToDoList.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-z8YW023KwugUPmLKs+W8XsCKWGfwOQDEIIzXD1ulPoo="
+        }
+      ]
+    },
+    {
+      "Route": "BlazorToDoList.3zmac2ix96.styles.css",
+      "AssetFile": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazorToDoList.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6203"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z8YW023KwugUPmLKs+W8XsCKWGfwOQDEIIzXD1ulPoo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 09:05:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3zmac2ix96"
+        },
+        {
+          "Name": "label",
+          "Value": "BlazorToDoList.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-z8YW023KwugUPmLKs+W8XsCKWGfwOQDEIIzXD1ulPoo="
+        }
+      ]
+    },
+    {
+      "Route": "BlazorToDoList.bundle.scp.css",
+      "AssetFile": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorToDoList.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6203"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z8YW023KwugUPmLKs+W8XsCKWGfwOQDEIIzXD1ulPoo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 09:05:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-z8YW023KwugUPmLKs+W8XsCKWGfwOQDEIIzXD1ulPoo="
+        }
+      ]
+    },
+    {
+      "Route": "BlazorToDoList.styles.css",
+      "AssetFile": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazorToDoList.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6203"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z8YW023KwugUPmLKs+W8XsCKWGfwOQDEIIzXD1ulPoo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 09:05:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-z8YW023KwugUPmLKs+W8XsCKWGfwOQDEIIzXD1ulPoo="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.bpk8xqwxhs.css",
+      "AssetFile": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162720"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 09:05:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bpk8xqwxhs"
+        },
+        {
+          "Name": "label",
+          "Value": "bootstrap/bootstrap.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.css",
+      "AssetFile": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162720"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 09:05:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.css.8inm30yfxf.map",
+      "AssetFile": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "449111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 09:05:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8inm30yfxf"
+        },
+        {
+          "Name": "label",
+          "Value": "bootstrap/bootstrap.min.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "449111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 09:05:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ifv42okdf2.png",
+      "AssetFile": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\wwwroot\\favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 09:05:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ifv42okdf2"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.png",
+      "AssetFile": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\wwwroot\\favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 09:05:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    },
+    {
+      "Route": "Images/background.43ljtd1266.jpg",
+      "AssetFile": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\wwwroot\\Images\\background.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2893449"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gO0WyRkmc7vTz+uNVxqOff6MqOJvjtVrEkzgbxs/RgI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 09:05:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "43ljtd1266"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/background.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gO0WyRkmc7vTz+uNVxqOff6MqOJvjtVrEkzgbxs/RgI="
+        }
+      ]
+    },
+    {
+      "Route": "Images/background.jpg",
+      "AssetFile": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\wwwroot\\Images\\background.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2893449"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gO0WyRkmc7vTz+uNVxqOff6MqOJvjtVrEkzgbxs/RgI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 09:05:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gO0WyRkmc7vTz+uNVxqOff6MqOJvjtVrEkzgbxs/RgI="
+        }
+      ]
+    },
+    {
+      "Route": "Images/fox.jpg",
+      "AssetFile": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\wwwroot\\Images\\fox.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "487143"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vVJ/blu4ObITz7ZqbObWgkw9huL0qFalSjvUdXcldE8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 09:05:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vVJ/blu4ObITz7ZqbObWgkw9huL0qFalSjvUdXcldE8="
+        }
+      ]
+    },
+    {
+      "Route": "Images/fox.tguqqz7cxy.jpg",
+      "AssetFile": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\wwwroot\\Images\\fox.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "487143"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vVJ/blu4ObITz7ZqbObWgkw9huL0qFalSjvUdXcldE8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 09:05:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tguqqz7cxy"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/fox.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vVJ/blu4ObITz7ZqbObWgkw9huL0qFalSjvUdXcldE8="
+        }
+      ]
+    }
+  ]
+}

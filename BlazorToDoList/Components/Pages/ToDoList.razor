@@ -1,0 +1,102 @@
+﻿@page "/todolist"
+
+@rendermode InteractiveServer
+
+@* These lines depend on your namespace names  *@
+@using BlazorToDoList.Service
+@using BlazorToDoList.Model
+
+@inject UserState state
+
+
+@inject NavigationManager navigation
+
+@* Interact with javascript  *@
+@inject IJSRuntime JsRuntime
+
+<h3>My ToDo List</h3>
+
+<div class="col-md-12">
+    <button class="btn btn-primary" @onclick="AddTask">New Task</button>
+    <br />
+    <br />
+</div>
+
+
+@if (todolist == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Description</th>
+                <th>Date</th>
+                <th>Subject</th>
+                <th>Priority</th>
+                <th>Completed</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var task in todolist)
+            {
+                <tr>
+                    <td>@task.TaskId</td>
+                    <td>@task.Description</td>
+                    <td>@task.DueDate.ToString("dd-MM-yyyy")</td>
+                    <td>@task.TaskSubject.SubjectName</td>
+                    <td>@task.Priority</td>
+                    <td>
+                        <input type="checkbox" checked="@task.IsCompleted" disabled />
+                    </td>
+                    <td><button @onclick="() => EditTask(task)">Edit</button></td>
+                    <td><button @onclick="() => DeleteTask(task)">Delete</button></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<Model.Task> todolist;
+
+    // Load tasks on Init
+    protected override void  OnInitialized()
+    {
+        var service = new ToDoService(state);
+        todolist = service.GetAllTasks();
+    } 
+
+     
+    //Delete task button
+    void DeleteTask(Model.Task task)
+    {
+        var service = new ToDoService(state);
+        service.RemoveTask(task.TaskId);
+        todolist = service.GetAllTasks();
+    }
+    // Edit task button
+    void EditTask(Model.Task task)
+    {
+        navigation.NavigateTo($"/edittask/{task.TaskId}");
+    }
+    // Add task button
+    void AddTask()
+    {
+        navigation.NavigateTo($"/edittask/{-1}");
+    }
+    // Delete button with confirmation (can replace DeleteTask)
+    async System.Threading.Tasks.Task DeleteTaskWithConfirm(Model.Task task)
+    {
+        bool confirmed = await JsRuntime.InvokeAsync<bool>("confirm", $"Are you sure to delete task: {task.TaskId}?");
+        if (confirmed)
+        {
+            var service = new ToDoService(state);
+            service.RemoveTask(task.TaskId);
+            todolist = service.GetAllTasks();
+        }
+    }
+}

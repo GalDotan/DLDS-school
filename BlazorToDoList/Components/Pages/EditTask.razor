@@ -1,0 +1,108 @@
+﻿@page "/edittask/{taskEditedId:int}"
+
+@rendermode InteractiveServer
+
+@using BlazorToDoList.Model
+@using BlazorToDoList.Service
+@inject UserState state
+@inject NavigationManager navigation
+
+<h3>@Title</h3>
+@if (task == null)
+{
+	<p><em>Loading...</em></p>
+}
+else
+{
+	<EditForm Model="task" OnValidSubmit="HandleValidSubmit" FormName="EditTask">
+		<DataAnnotationsValidator />
+
+		<div class="form-group">
+			<label for="TaskId">TaskId:</label>
+			<InputNumber id="TaskId" style="width: 50%" class="form-control" disabled="true" @bind-Value="task.TaskId" />
+		</div>
+
+		<div class="form-group">
+			<label for="SubjectId">Subject:</label>
+			<InputSelect class="form-control" style="width: 50%" @bind-Value="task.TaskSubject.SubjectId">
+				@foreach (var subj in Subjects)
+				{
+					<option value="@subj.SubjectId">@subj.SubjectName</option>
+				}
+			</InputSelect>
+		</div>
+
+		<div class="form-group">
+			<label for="Description">Description:</label>
+			<InputText id="Description" style="width: 50%" class="form-control" @bind-Value="task.Description" />
+			<ValidationMessage For="() => task.Description" />
+		</div>
+
+		<div class="form-group">
+			<label for="DueDate">Due Date:</label>
+			<InputDate id="DueDate" style="width: 50%" class="form-control" @bind-Value="task.DueDate" />
+		</div>
+
+		<div class="form-group">
+			<label for="Priority">Priority:</label>
+			<InputNumber id="Priority" style="width: 50%" class="form-control" @bind-Value="task.Priority" />
+			<ValidationMessage For="() => task.Priority" />
+		</div>
+		<div class="form-group">
+			<label for="IsComleted">Is Completed:</label>
+			<InputCheckbox id="IsComleted" class="form-check-input" @bind-Value="task.IsCompleted" />
+		</div>
+
+		<button type="submit" class="btn btn-primary">Save</button>
+		<button class="btn btn-secondary" @onclick="Cancel">Cancel</button>
+	</EditForm>
+}
+
+
+@code
+{
+	[Parameter]
+	public int taskEditedId { get; set; }
+
+	private Model.Task task;
+
+	private List<Subject> Subjects;
+
+	string Title;
+	protected override void OnInitialized()
+	{
+		var service = new ToDoService(state);
+		// Edit or New
+		if (taskEditedId > 0)
+		{
+			task = service.GetTaskById(taskEditedId);
+			Title = $"Edit Task {task.TaskId}";
+		}
+		else
+		{
+			task = new Model.Task();
+			task.DueDate = DateTime.Now;
+			task.TaskSubject = new Model.Subject(1);
+			task.Priority = 1;
+			Title = "New Task";
+		}
+
+		// Get the subjects for the selection
+		Subjects = service.GetAllSubjects();
+
+	}
+	// Send Add or Edit to service
+	private void HandleValidSubmit()
+	{
+		var service = new ToDoService(state);
+		if (task.TaskId > 0)
+			service.UpdateTask(task);
+		else
+			service.AddTask(task);
+		navigation.NavigateTo("/todolist");
+	}
+	private void Cancel()
+	{
+		navigation.NavigateTo("/todolist");
+	}
+}

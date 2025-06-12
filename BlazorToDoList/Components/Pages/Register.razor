@@ -1,0 +1,104 @@
+﻿@page "/register"
+@rendermode InteractiveServer
+@using BlazorToDoList.Model
+@using BlazorToDoList.Service
+@inject NavigationManager NavigationManager
+
+<div class="register-container">
+    <h2>Register</h2>
+    <EditForm Model="registerModel" OnValidSubmit="HandleRegister">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <InputText id="username" @bind-Value="registerModel.Username" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <InputText id="password" @bind-Value="registerModel.Password" type="password" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label for="confirmPassword">Confirm Password:</label>
+            <InputText id="confirmPassword" @bind-Value="registerModel.ConfirmPassword" type="password" class="form-control" />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Register</button>
+        <button class="btn btn-secondary" @onclick="Cancel">Cancel</button>
+    </EditForm>
+
+    @if (errorMessage != null)
+    {
+        <p class="error-message">@errorMessage</p>
+    }
+</div>
+@* Register Style *@
+<style>
+    .register-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    }
+
+    .form-group {
+    margin-bottom: 15px;
+    }
+
+    .error-message {
+    color: red;
+    }
+</style>
+@code {
+
+    private RegisterModel registerModel;
+    private string errorMessage;
+
+    protected override void OnInitialized()
+    {
+        registerModel = new RegisterModel();
+    }
+    private void HandleRegister()
+    {
+        if (registerModel.Password != registerModel.ConfirmPassword)
+        {
+            errorMessage = "Passwords do not match!";
+            return;
+        }
+        bool isOK = true;
+        LoginService login = new LoginService();
+        // Catch SQL Error
+        try
+        {
+            // Check if exists already with this name
+            bool exist = login.UserExists(registerModel.Username);
+            if (exist)
+            {
+                errorMessage = $"This user exist already!";
+                return;
+            }
+            int num = login.AddUser(registerModel.Username, registerModel.Password,false);
+            if (num <=0)
+            {
+                isOK = false;
+                errorMessage = $"Failed to create user";
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Failed to create user {ex.Message}, maybe this name {registerModel.Username} is already used";
+            isOK = false;
+        }
+        if (isOK)
+            NavigationManager.NavigateTo("/login"); 
+    }
+
+    private void Cancel()
+    {
+        NavigationManager.NavigateTo("/login"); 
+    }
+}
+

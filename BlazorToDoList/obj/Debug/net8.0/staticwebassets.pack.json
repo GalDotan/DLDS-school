@@ -1,0 +1,53 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorToDoList.bundle.scp.css",
+      "PackagePath": "staticwebassets\\BlazorToDoList.3zmac2ix96.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\wwwroot\\Images\\background.jpg",
+      "PackagePath": "staticwebassets\\Images\\background.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\wwwroot\\Images\\fox.jpg",
+      "PackagePath": "staticwebassets\\Images\\fox.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gldot\\Downloads\\BlazorToDoList\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BlazorToDoList.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BlazorToDoList.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BlazorToDoList.props",
+      "PackagePath": "build\\BlazorToDoList.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BlazorToDoList.props",
+      "PackagePath": "buildMultiTargeting\\BlazorToDoList.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BlazorToDoList.props",
+      "PackagePath": "buildTransitive\\BlazorToDoList.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
